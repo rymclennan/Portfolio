@@ -1,0 +1,410 @@
+/*
+* Theme Name: HackerYou Starter Theme
+* Theme URI: http://hackeryou.com;
+* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Version: 1.0
+* Author: HackerYou
+* Author URI: http://hackeryou.com
+*/
+
+@import 'normalize';
+@import 'typography';
+@import 'navigation';
+@import 'sidebar';
+@import 'comments';
+@import 'footer';
+/*
+====================================
+Default Styling
+====================================
+*/
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: white;
+	background: #000;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.content {
+	float: left;
+	width: 65%;
+	margin-right: 5%;
+}
+
+.full {
+	width: 100%;
+}
+
+#site-title a {
+display: none;
+}
+
+header.container ul {
+	display:none;
+}
+
+// ------------HEADER------------
+
+.header-container {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+header {
+	background: url('stockImages/foxPhotoResize2.jpg') no-repeat fixed;
+	background-size: cover;
+	margin: 0 auto;
+	height: 100vh;
+	display: flex;
+   justify-content: center;
+   align-items: center;
+   @media (max-width: 440px) {
+   	background: url('stockImages/foxPhotoResizeMobile.jpg') no-repeat fixed;
+   	background-size: cover;
+   	height: 100vh;
+   	@media (max-width: 325px) {
+   		height: 400px
+   	}
+   }
+}
+
+.title-page-flex-container {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+		@media (max-width: 667px) {
+			width: auto;
+			height: auto;
+	}	
+	p {
+		margin: 0;
+		font-size: 24px;
+		color: #000;
+	}
+	a {
+	text-decoration: none;
+	transition: ease 0.2s all;
+	color: #000;
+	&:hover {
+		color: maroon;
+	}
+}
+}
+
+// -----------NAV BAR------------
+nav.links {
+	display: flex;
+	justify-content: flex-start;
+    -ms-transform: rotate(3-deg); /* IE 9 */
+    -webkit-transform: rotate(-deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+    padding: 15px;
+	a i {
+		color: #000;
+		font-size: 35px;
+		padding: 5px;
+		transition: ease 0.2s all;
+		@media (max-width: 667px) {
+			font-size: 20px;
+		}
+		&:hover {
+			color: maroon;
+		}
+	}
+}
+
+ul#menu-social-links-1 {
+	background: snow;
+	padding-right: 25px;
+}
+
+
+// -----------------MAIN------------
+.work {
+	display: flex;
+	justify-content: center;
+	h2 {
+		font-size: 36px;
+		background: snow;
+		color: #000;
+		padding: 5px 20px 5px 5px;
+		margin: 0;
+		-webkit-box-shadow: -5px 0px 47px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: -5px 0px 47px 0px rgba(0,0,0,0.75);
+		box-shadow: -5px 0px 47px 0px rgba(0,0,0,0.75);
+			@media (max-width: 667px) {
+				margin: 20px 0 0 0;
+		}
+	}
+}
+.main {
+	height: 100vh;
+	background: url('stockImages/children.jpg') no-repeat;
+	background-size: cover;
+	border-top: 5px solid #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 5px solid snow;
+	padding: 30px;
+		@media (max-width: 767px) {
+		width: auto;
+		height: auto;
+	}	
+}
+
+.main-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.pieces-all-contain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	@media (max-width: 667px) {
+	flex-direction: column;
+	}	
+}
+
+.individual-piece-container {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding: 30px;
+	@media (max-width: 667px) {
+		width: 100%;
+		padding: 20px 20px 0 20px;
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+	h2 {
+		color: #000;
+		background: snow;
+		padding: 5px;
+		display: none;
+	}
+}
+
+img {
+		filter: grayscale(70%);
+		transition: ease 0.3s all;
+		&:hover {
+		filter: grayscale(1%);
+		cursor: pointer;
+		}
+	}
+
+.individual-piece-container p {
+	color: #000;
+	background: snow;
+	padding: 3px;
+	-webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+	@media (max-width: 667px) {
+		font-size: 14px;
+		padding: 2px;
+		margin: 5px auto;
+	}
+}
+
+.individual-piece-container a {
+	color: #000;
+	&:hover {
+		color: maroon;
+	}
+}
+
+.image {
+	padding: 0;
+	margin:  0 auto;
+}
+
+.arrow i {
+	color: snow;
+	font-size: 60px;
+	transition: ease 0.2s all;
+	@media(max-width: 667px) {
+		display: none;
+	}
+}
+
+.arrow i:hover {
+		color: beige;
+		cursor: pointer;
+	}
+
+
+// -----------ABOUT/CONTACT------
+
+.about-contact-section {
+	background: url('stockImages/womanCats.jpg') no-repeat;
+	background-size: cover;
+	height: 100vh;
+		@media (max-width: 767px) {
+		width: auto;
+		height: auto;
+	}	
+}
+
+.holler {
+	text-align: center;
+	padding: 50px;
+	@media(max-width: 667px) {
+		padding: 20px 20px 10px 20px;
+	}
+}
+
+.holler h2 {
+	background: snow;
+	color: #000;
+	display: inline;
+	padding: 3px 16px 3px 3px;
+	font-size: 32px;
+	webkit-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 41px 8px rgba(0,0,0,0.75);
+}
+
+.about-contact-container {
+	margin: 0 auto;
+	display: flex;
+	max-width: 1200px;
+	@media (max-width: 667px) {
+		flex-direction: column;
+	}	
+}
+
+.about {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	@media (max-width: 667px) {
+		width: 100%;
+		padding: 20px;
+	}
+	p {
+		margin: 5px;
+	}
+	span {
+		background: snow;
+		color: #000;
+		font-size: 19px;
+		-webkit-box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+		-moz-box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+		box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+		padding: 2px 16px 3px 3px;
+		@media(max-width: 880px) {
+			font-size: 17px;
+		}
+		@media(max-width: 667px) {
+			font-size: 15px;
+		}
+	}
+}
+
+.email-link {
+	text-decoration: none;
+	color: #000;
+}
+
+.contact-form {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	border-left: 1px solid snow;
+	padding: 20px;
+	@media (max-width: 720px) {
+	border: none;
+	}
+	@media (max-width: 667px) {
+		width: 100%;
+		justify-content: flex-start;
+		padding: 15px;
+	@media (max-width: 420px) {
+		display: none;
+	}
+	}
+}
+
+input[type="text"],
+input[type="email"] {
+    background-color: #fff;
+    color: #000;
+    width: 60%;
+    border: none;
+	-webkit-box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+form p {
+	margin: 5px;
+}
+
+.wpcf7 textarea {
+    background-color: #fff;
+    color: #000;
+    border: none;
+   -webkit-box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 4px 1px 20px 0px rgba(0,0,0,0.75);
+}
+
+.wpcf7-submit {
+	border: none;
+	color: #000;
+	background: snow;
+	padding-right: 20px;
+	margin: 5px auto;
+	&:hover {
+		color: pink;
+	}
+}
+
+.arrow2 {
+	display: flex;
+	justify-content: center;
+	padding: 30px;
+	i {
+	color: snow;
+	font-size: 60px;
+	transition: ease 0.2s all;
+	}
+}
+
+.arrow2 i:hover {
+	color: beige;
+	cursor: pointer;
+}
+
+// -----------FOOTER-------------
+
+footer  {
+	background: #000;
+	p {
+	text-align: center;
+	}
+}
+
+
+
+	

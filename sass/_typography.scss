@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'MenschRegular';
+    src: url('titleFont/mensch-wf.eot');
+    src: url('titleFont/mensch-wf.eot?#iefix') format('embedded-opentype'),
+         url('titleFont/mensch-wf.woff') format('woff'),
+         url('titleFont/mensch-wf.ttf') format('truetype'),
+         url('titleFont/mensch-wf.svg#MenschMenschRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MenschBold';
+    src: url('titleFont/mensch-bold-wf.eot');
+    src: url('titleFont/mensch-bold-wf.eot?#iefix') format('embedded-opentype'),
+         url('titleFont/mensch-bold-wf.woff') format('woff'),
+         url('titleFont/mensch-bold-wf.ttf') format('truetype'),
+         url('titleFont/mensch-bold-wf.svg#MenschMenschBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MenschBoldInline';
+    src: url('titleFont/mensch-inline-wf.eot');
+    src: url('titleFont/mensch-inline-wf.eot?#iefix') format('embedded-opentype'),
+         url('titleFont/mensch-inline-wf.woff') format('woff'),
+         url('titleFont/mensch-inline-wf.ttf') format('truetype'),
+         url('titleFont/mensch-inline-wf.svg#MenschMenschBoldInline') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MenschThin';
+    src: url('titleFont/mensch-thin-wf.eot');
+    src: url('titleFont/mensch-thin-wf.eot?#iefix') format('embedded-opentype'),
+         url('titleFont/mensch-thin-wf.woff') format('woff'),
+         url('titleFont/mensch-thin-wf.ttf') format('truetype'),
+         url('titleFont/mensch-thin-wf.svg#MenschMenschThin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 a {
+	font-family: 'MenschBoldInline', Helvetica;
+	color: #000;
+	background: snow;
+	font-size: 40px;
+	padding: 5px 30px 5px 5px;
+	-webkit-box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+	box-shadow: -1px 0px 33px -9px rgba(0,0,0,0.75);
+	&:hover {
+		background: #fff;
+		}
+}
+
+h2, h3, h4 {
+	font-family: 'MenschBoldInline', helvetica;
+}
+
+a {
+	text-decoration: none;
+	transition: ease 0.2s all;
+}
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+	font-family: 'Inconsolata', Helvetica ;
+}
+
+/*blockquotes*/
+
+blockquote {
+	background: #F7F7F7;
+	margin: 0;
+	padding: 20px;
+	p {
+		margin-top: 0;
+	}
+}
+
+/*tables*/
+
+table {
+	td {
+		padding: 10px;
+	}
+	tr td:first {
+		padding-right: 0;
+	}
+}
+
+/*def lists*/
+
+dt {
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+
+dd {
+	padding: 10px;
+	margin-left: 10px;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
+
+/*PRE*/
+
+pre {
+	background: #F7F7F7;
+	padding: 10px;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+
+.aligncenter {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.alignleft {
+	float: left;
+}
+
+.alignright {
+	float: right;
+}
+
+img {
+	&.alignleft {
+		padding-right: 5px;
+	}
+	&.alignright {
+		padding-left: 5px;
+	}
+}
+
+.clear {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+@media (max-width: 420px) {
+	h1 {
+		    -ms-transform: rotate(-3deg); /* IE 9 */
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    transform: rotate(-3deg);
+	}
+}
